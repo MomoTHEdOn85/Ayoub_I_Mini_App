@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini-App</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <h1 class="hidden">Mini Cooper App</h1>
+
+  <header id="Home">
+    <h2 class="hidden">Main Header</h2>
+    <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="logo">
+          <img src="./images/logo.png" alt="Logo of Mini Cooper">
+        </div>
+      </div>
+
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      
+      <div class="nav-links">
+        <a href="#" target="_blank">ELECTRIC</a>
+        <a href="#" target="_blank">CONVERTIBLE</a>
+        <a href="#" target="_blank">3 & 5 DOOR</a>
+        <a href="#" target="_blank">COUNTRYMAN</a>
+        <a href="#" target="_blank"><ion-icon name="cart-outline"></ion-icon>SHOPNOW</a>
+      </div>
+    </div>
+
+
+
+
+  </header>
+
+  <main id="app" class="mainCont">
+    <h2 class="hidden">Main Content</h2>
+    <div class="hero">
+      <img src="./images/hero.jpg">
+    </div>
+
+    <section class="one-item hero">
+      <h2>Mini Section</h2>
+    </section>
+    
+    <div class="Call">
+      <h3 class="family font">Look Through your Favourite rides! </h3>
+    </div>
+    
+    <section class="one-item"><h3 class="hidden">Mini's</h3>
+      <nav class="pieceSpace"><h4 class="hidden">Mini Models</h4>
+          <ul class="characters four-itemsPiece">
+              <theminithumb @loadlbdata="loadLightbox" v-for="mini in miniData" :mini="mini"></theminithumb>
+          </ul>
+      </nav>
+    </section>
+    
+    <thelightbox class="fluid" @closelightbox="this.showLB=false" v-if="showLB" :item="lbData"></thelightbox>
+  </main>
+
+  <footer>
+    <h2 class="hidden">Main Footer</h2>
+    <li class="ftr_links">
+      <a>Contact Us</a>
+      <a>Cookies Ads</a>
+      <a>Privacy Policy</a>
+      <a>Accesssbility</a>
+      <a>Unsubscribe</a>
+    </li>
+    <p class="author">Remade for School Project by Immama</p>
+  </footer>
+
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="js/main.js" type="module" defer></script>
+  
+</body>
+</html>

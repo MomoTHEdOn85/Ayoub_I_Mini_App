@@ -1,0 +1,30 @@
+#character-nav { 
+  text-align: center; 
+}
+
+.characters { list-style-type: none; }
+
+.characters li { 
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin: 10px 8px;
+  width: fit-content;
+  padding-bottom: 2em;
+
+
+  /* border: thin dashed white; */
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.characters li a {
+  text-decoration: none;
+}
+
+.pieceSpace {
+  margin-left: auto;
+  margin-right: auto;
+}

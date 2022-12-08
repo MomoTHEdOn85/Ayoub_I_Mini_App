@@ -1,0 +1,95 @@
+.lightbox {
+   
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 3em;
+
+  background-color: rgba(94, 92, 92, 0.95);
+  z-index: 5000;
+  
+}
+
+.lbprice {
+  text-align: center;
+   
+  padding: 0.5em;
+  color: aquamarine;
+  font-weight: 800;
+  font-size: 2em;
+ 
+
+
+}
+
+
+
+.lbFont {
+  color: rgb(209, 253, 87);
+  text-align: left;
+  font-size: 2em;
+  font-weight: 600;
+   
+}
+
+
+
+.lbFontP {
+  display: inline-block;
+  padding: 0.5em;
+  color: aquamarine;
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.lbTitle {
+  color: white;
+  text-align: center;
+  font-size: 4em;
+ 
+}
+
+.lightbox_close { 
+  position: relative;
+  top: 20px;
+  left: 95%;
+  cursor: pointer;
+
+  width: 50px;
+}
+
+.lbImg {
+  border-radius: 5%;
+  width: 70%;
+  margin: 0;
+  padding: 4em;
+
+.lightbox_close:hover { 
+  opacity: 0.7; 
+  transform: scale(-1, 1); 
+}
+}
+
+.lightbox section {
+  padding-top: 1em;
+  height: fit-content;
+  margin-right: 8%;
+}
+
+.lb_heading { 
+  text-align: left;
+  color: white;
+  font-size: 2em;
+}
+
+.lb_text { 
+  font-size: 8em;
+  text-align: center;
+  color: white;
+}
+
+ 
+
+ 
+
+ 
