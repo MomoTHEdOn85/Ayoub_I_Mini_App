@@ -1,4 +1,4 @@
-<h1 color="#adff2f" allign="center"> My Portfolio </h1>
+<h1 color="#adff2f" allign="center"> Mini App </h1>
 
 Create an AJAX request for the mini data housed in a local JSON object using the Fetch API.
 Use that application state to build out your application’s view (the mini app splash/home page).
